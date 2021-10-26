@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "4c4eff4d-c991-40c0-ac68-8122ffb6e90e",
+		"name": "FFM_Register OT Member",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Positive",
+			"item": [
+				{
+					"name": "1.1 310 Create FFM platform administrative user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"tom220@gmai.com\",\r\n  \"password\": \"tom1\",\r\n  \"firstname\": \"Tom\",\r\n  \"lastname\": \"Hall\",\r\n  \"username\": \"Hall220\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://165.227.200.62:5001//api/v1/field-force/auth/register-admin-user",
+							"protocol": "http",
+							"host": [
+								"165",
+								"227",
+								"200",
+								"62"
+							],
+							"port": "5001",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"field-force",
+								"auth",
+								"register-admin-user"
+							]
+						},
+						"description": "Objective: As a tester I should be able to register OT member with email, password, username, first and last name. \n\nSE:Shahed PO:Pranto:Tester:Rema\n\nExpected Result: As a tester I should be able to register OT member. \n\n\nActual Result: Sucessfully registered OT member. \n\nTest Result: \"message\": \"Sucessfully registered admin user Hall\", status\": \"sucess\"\n\nStatus Code: 201 Created \n\nTest Status: Pass"
+					},
+					"response": []
+				},
+				{
+					"name": "1.2 310 Create FFM platform administrative user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"starbucks1@coffee.com\",\r\n    \"password\": \"coffee1\",\r\n    \"firstname\": \"Star1\",\r\n    \"lastname\": \"Bucks1\",\r\n    \"username\": \"coffee1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serverUrl}}/api/v1/field-force/auth/register-admin-user",
+							"host": [
+								"{{serverUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"field-force",
+								"auth",
+								"register-admin-user"
+							]
+						},
+						"description": "Objective: As a tester I should be able to register OT member with email, password, username, first and last name. \n\nSE:Shahed PO:Pranto:Tester:Rema\n\nExpected Result: As a tester I should be able to register OT member. Test Data: {\"email\",\"starbucks@coffee.com\" \"password\":\"coffee\", \"firstname\": \"Star\", \"lastname:\" \"Bucks\", \"username\": coffee}  \n\nActual Result: Sucessfully registered OT member. \n\nTest Result: \"message\": \"Sucessfully registered admin user Coffee\", status\": \"sucess\"S\n\nStatus Code: 201 Created \n\nTest Status: Pass"
+					},
+					"response": []
+				},
+				{
+					"name": "1.3 310 Create FFM platform administrative user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"cold1@stone.com\",\r\n    \"password\": \"cold1\",\r\n    \"firstname\": \"Cold1\",\r\n    \"lastname\": \"Stone1\",\r\n    \"username\": \"ice cream1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://165.227.200.62:5001//api/v1/field-force/auth/register-admin-user",
+							"protocol": "http",
+							"host": [
+								"165",
+								"227",
+								"200",
+								"62"
+							],
+							"port": "5001",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"field-force",
+								"auth",
+								"register-admin-user"
+							]
+						},
+						"description": "Objective: As a tester I should be able to register OT member with email, password, username, first and last name. \n\nSE:Shahed PO:Pranto:Tester:Rema\n\nExpected Result: As a tester I should be able to register OT member. \n\n Actual Result: Sucessfully registered OT member. \n\nTest Result: \"message\": \"Sucessfully registered admin user Ice cream\", status\": \"sucess\"S\n\nStatus Code: 201 Created \n\nTest Status: Pass"
+					},
+					"response": []
+				},
+				{
+					"name": "1.4 310 Create FFM platform administrative user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sweet@frog.com\",\r\n    \"password\": \"sweet\",\r\n    \"firstname\": \"Sweeet\",\r\n    \"lastname\": \"Frog\",\r\n    \"username\": \"sweet1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://165.227.200.62:5001//api/v1/field-force/auth/register-admin-user",
+							"protocol": "http",
+							"host": [
+								"165",
+								"227",
+								"200",
+								"62"
+							],
+							"port": "5001",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"field-force",
+								"auth",
+								"register-admin-user"
+							]
+						},
+						"description": "Objective: As a tester I should be able to register OT member with email, password, username, first and last name. \n\nSE:Shahed PO:Pranto:Tester:Rema\n\nExpected Result: As a tester I should be able to register OT member. \n\nActual Result: Sucessfully registered OT member. \n\nTest Result: \"message\": \"Sucessfully registered admin user sweet1\", status\": \"sucess\"S\n\nStatus Code: 201 Created \n\nTest Status: Pass"
+					},
+					"response": []
+				},
+				{
+					"name": "1.5 310 Create FFM platform administrative user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"roy@rogers.com\",\r\n    \"password\": \"roy\",\r\n    \"firstname\": \"Roy\",\r\n    \"lastname\": \"Rogers\",\r\n    \"username\": \"roy1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://165.227.200.62:5001//api/v1/field-force/auth/register-admin-user",
+							"protocol": "http",
+							"host": [
+								"165",
+								"227",
+								"200",
+								"62"
+							],
+							"port": "5001",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"field-force",
+								"auth",
+								"register-admin-user"
+							]
+						},
+						"description": "Objective: As a tester I should be able to register OT member with email, password, username, first and last name. \n\nSE:Shahed PO:Pranto:Tester:Rema\n\nExpected Result: As a tester I should be able to register OT member. \n\nActual Result: As I tester I was able to register an OT member. \n\nTest Result: \"message\": \"Sucessfully registered admin user roy1\", status\": \"sucess\"S\n\nStatus Code: 201 Created \n\nTest Status: Pass"
+					},
+					"response": []
+				},
+				{
+					"name": "1.6 310 Create FFM platform administrative user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"Sunny@gmail.com\",\r\n    \"password\": \"SunnyD\",\r\n    \"firstname\": \"Sunny\",\r\n    \"lastname\": \"D\",\r\n    \"username\": \"SunnyD\"\r\n}"
+						},
+						"url": {
+							"raw": "http://96.85.103.141:6001/api/v1/field-force/auth/register-admin-user",
+							"protocol": "http",
+							"host": [
+								"96",
+								"85",
+								"103",
+								"141"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"field-force",
+								"auth",
+								"register-admin-user"
+							]
+						},
+						"description": "Objective: As a tester I should be able to register OT member with email, password, username, first and last name. \n\nSE:Shahed PO:Pranto:Tester:Rema\n\nExpected Result: As a tester I should be able to register OT member. \nActual Result: Sucessfully registered OT member. \n\nTest Result: \"message\": \"Sucessfully registered admin user SunnyD\", status\": \"sucess\"S\n\nStatus Code: 201 Created \n\nTest Status: Pass"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Negative",
+			"item": [
+				{
+					"name": "1.1 310 Create OT Member without username",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"roy@rogers.com\",\r\n    \"password\": \"roy\",\r\n    \"firstname\": \"Roy\",\r\n    \"lastname\": \"Rogers\",\r\n    \"username\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://165.227.200.62:5001//api/v1/field-force/auth/register-admin-user",
+							"protocol": "http",
+							"host": [
+								"165",
+								"227",
+								"200",
+								"62"
+							],
+							"port": "5001",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"field-force",
+								"auth",
+								"register-admin-user"
+							]
+						},
+						"description": "Objective: As a tester I should not be able to register a OT member without a username.\n\nSE: Shahed PO:Pranto Tester:Rema\n\nExpected Result: As a tester I should not be able to register an OT member without a username. \n\nActual Result: I was not able to register an OT member without a username. \n\nTest Result:{\n    \"message\": [\n        \"username must be non-empty\"\n    ],\n    \"status\": \"failed\"\n}\n\nStatus Code: 403 FORBIDDEN\n\nTest Status: Pass"
+					},
+					"response": []
+				},
+				{
+					"name": "1.2 310 Create OT Member without a password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"starbucks@coffee.com\",\r\n    \"password\": \"\",\r\n    \"firstname\": \"Star\",\r\n    \"lastname\": \"Bucks\",\r\n    \"username\": \"Coffee1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://165.227.200.62:5001//api/v1/field-force/auth/register-admin-user",
+							"protocol": "http",
+							"host": [
+								"165",
+								"227",
+								"200",
+								"62"
+							],
+							"port": "5001",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"field-force",
+								"auth",
+								"register-admin-user"
+							]
+						},
+						"description": "Objective: As a tester I should not be able to register a OT member without a password.\n\nSE: Shahed PO:Pranto Tester:Rema\n\nExpected Result: As a tester I should not be able to register an OT member without a password. \n\nActual Result: I was not able to register an OT member without a password. \n\nTest Result:{\n    \"message\": [\n        \"password must be non-empty\"\n    ],\n    \"status\": \"failed\"\n}\n\nStatus Code: 403 FORBIDDEN\n\nTest Status: Pass"
+					},
+					"response": []
+				},
+				{
+					"name": "1.2 310 Create OT Member without first name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"starbucks@coffee.com\",\r\n    \"password\": \"\",\r\n    \"firstname\": \"Star\",\r\n    \"lastname\": \"Bucks\",\r\n    \"username\": \"Coffee1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://165.227.200.62:5001//api/v1/field-force/auth/register-admin-user",
+							"protocol": "http",
+							"host": [
+								"165",
+								"227",
+								"200",
+								"62"
+							],
+							"port": "5001",
+							"path": [
+								"",
+								"api",
+								"v1",
+								"field-force",
+								"auth",
+								"register-admin-user"
+							]
+						},
+						"description": "Objective: As a tester I should not be able to register a OT member without a first name.\n\nSE: Shahed PO:Pranto Tester:Rema\n\nExpected Result: As a tester I should not be able to register an OT member without a first name. \n\nActual Result: I was not able to register an OT member without a first name. \n\nTest Result:{\n    \"message\": [\n        \"firstname must be non-empty\"\n    ],\n    \"status\": \"failed\"\n}\n\nStatus Code: 403 FORBIDDEN\n\nTest Status: Pass"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
